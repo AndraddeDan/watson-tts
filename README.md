@@ -1,1 +1,1 @@
-# Watson-Text-to-Speech
+# Watson Text-to-Speech
