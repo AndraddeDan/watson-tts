@@ -27,8 +27,10 @@ body {
 }
 
 .comentarios__block {
+  align-items: flex-start;
   display: flex;
   justify-content: space-evenly;
+  margin: 35px auto;
 }
 
 .comentarios__block p {
@@ -45,7 +47,7 @@ body {
   box-shadow: 0px 2px var(--border-color);
   font-weight: bold;
   height: fit-content;
-  margin: 10px auto;
+  margin: 0px auto;
   outline: none;
   padding: 5px 20px;
 }
