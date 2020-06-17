@@ -1,5 +1,4 @@
 const restify = require('restify');
-// const errs = require('restify-errors');
 const corsMiddleware = require('restify-cors-middleware');
 
 const app = restify.createServer({ name: 'watson-speecher', version: '1.0.0' });
