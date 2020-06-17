@@ -1,0 +1,1 @@
+const comentario = new Comentario();
