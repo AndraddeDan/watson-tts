@@ -1,11 +1,21 @@
 const restify = require('restify');
-const errs = require('restify-errors');
+// const errs = require('restify-errors');
+const corsMiddleware = require('restify-cors-middleware');
 
 const app = restify.createServer({ name: 'watson-speecher', version: '1.0.0' });
 
 app.use(restify.plugins.acceptParser(app.acceptable));
 app.use(restify.plugins.queryParser());
 app.use(restify.plugins.bodyParser());
+
+const cors = corsMiddleware({
+  origins: ["*"],
+  allowHeaders: ["Authorization"],
+  exposeHeaders: ["Authorization"]
+})
+
+app.pre(cors.preflight);
+app.use(cors.actual);
 
 
 // DATABASE CONNECTION
