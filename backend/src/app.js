@@ -31,7 +31,7 @@ app.get('/api/v1/comentarios/view', (req, res, next) => {
 app.post('/api/v1/comentarios/insert', (req, res, next) => {
   knex('comentarios')
     .insert(req.body)
-    .then((data => res.send(data), next))
+    .then((data => { res.send(data), next }))
 });
 
 module.exports = app;
