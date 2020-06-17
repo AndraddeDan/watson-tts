@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Watson Text-to-Speech</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 </head>
 
@@ -12,25 +12,19 @@
   <div class="container">
     <div class="cadastro">
       <h4>Comentário</h4>
-      <textarea id="" cols="55" rows="10" class="cadastro__textarea"></textarea>
+      <textarea id="textarea" cols="55" rows="10" class="cadastro__textarea"></textarea>
       <button class="cadastro__button" onclick="comentario.cadastrar()"> Cadastrar </button>
 
     </div>
     <div class="comentarios">
       <h4>Comentários</h4>
 
-      <div id="comentarios">
-        <div class="comentarios__block">
-          <p>Lorem ipsum dolor sit am. Viste provident autem libero labore minima recusandae et architecto, molestiae
-            officia non, numquam est sed quisquam? Totam illo tenetur perferendis praesentium!</p>
-          <button class="comentarios__block-button" onclick="comentario.ouvir()">Ouvir</button>
-        </div>
-      </div>
+      <div id="comentarios"></div>
 
     </div>
   </div>
 
-  <script src="assets/Comentario.js"></script>
+  <script src="assets/js/Comentario.js"></script>
 </body>
 
 </html>
