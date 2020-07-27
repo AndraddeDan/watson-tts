@@ -1,4 +1,4 @@
-# Watson Text to Speech
+# Watson TTS [Text to Speech]
 
 - Para rodar o projeto é necessário ter o MySql e o ambiente Node instalado. 
 
